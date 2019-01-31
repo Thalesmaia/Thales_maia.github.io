@@ -1,0 +1,167 @@
+* {
+ 	margin:0;
+ 	font-family: 'Open Sans', sans-serif;
+ 	outline: none;
+ 	transition: all .23s ease-in-out;
+ }
+
+ body {
+  background-color: #0074D9;
+ }
+
+ .name1 a{
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  text-decoration: none;
+  font-size: 50px;
+  border: 3px solid rgba(0,0,0, 0.4);
+  color: #fff;
+  display: block;
+  text-align: center;
+ }
+ 
+form.log {
+ 	  display: block;
+   	margin-top: 50px;
+    margin-left: 35%;
+ 	  width: 90%;
+    max-width: 400px;
+    border-radius: 5px;
+    background:#fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 20px 0px;
+    text-align: center;
+ }
+
+ form.log p {
+ 	font-size: 25pt;
+ 	font-weight: bold;
+ 	margin-bottom: 20px;
+ }
+
+
+ form.log input.field {
+ 	display: block;
+ 	margin: auto;
+ 	width: 80%;
+ 	padding-left: 10px;
+ 	height: 30px;
+ 	border: 1px solid #ccc;
+ 	border-radius: 3px;
+ 	background: #FFF;
+ 	margin-top: 10px;
+ }
+
+  form.log input.field:focus {
+  	border-color: #0074D9;
+  	height: 30px;
+ }
+
+ form.log input.btn {
+ 	display: block;
+ 	margin: auto;
+ 	margin-top: 25px;
+ 	padding: 10px 7px;
+ 	border-radius: 5px;
+ 	border: none;
+ 	background: #DDD;
+ 	color: #666;
+ 	font-weight: bold;
+ 	cursor: pointer;
+ }
+
+ form.log input.btn:hover {
+ 	background: #0074D9;
+ 	color: #FFF;
+ }
+
+ form.log a {
+ 	display: block;
+ 	margin: auto;
+ 	width: auto;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	color: #666;
+ 	margin-top: 20px;
+ 	font-size: 10pt;
+ 	cursor: pointer;
+}
+
+form.log a:hover {
+ 	color: #000;
+}
+
+ form#registar.log {
+ 	display: none;
+ }
+
+ p#credits {
+ 	display: block;
+ 	margin:auto;
+ 	text-align: center;
+ 	width: 90%;
+ 	margin-top: 20px;
+ 	margin-bottom: 20px;
+ 	color: #666;
+ 	font-size: 10pt;
+ }
+
+ div#loading {
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	height: 100vh;
+ 	width: 100%;
+ 	display: none;
+ }
+
+  div#loading div#opacity{
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	height: 100vh;
+ 	width: 100%;
+ 	background: #000;
+ 	opacity: 0.8;
+ 	z-index: -1;
+ }
+
+  div#loading p {
+  	display: block;
+  	margin: auto;
+ 	width: 90%;
+ 	height: 5vh;
+ 	margin-top: 45vh;
+ 	text-align: center;
+ 	vertical-align: middle;
+ 	color: #FFF;
+ }
+
+ h1 {
+      color: #fff;
+      display: block;
+      margin: auto;
+      width: 90%;
+      text-align: center;
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+    }
+
+    p#credits {
+      color: #FFF;
+    }
+
+    h3#erro {
+      display: block;
+      margin: auto;
+      width: 80%;
+      max-width: 200px;
+      background: #FFF;
+      color: red;
+      padding: 10px;
+      margin-top: 20px;
+      margin-top: 20px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
