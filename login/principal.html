@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/login1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<meta charset="utf-8">
+	<link href="https://img.icons8.com/cotton/50/000000/gender-neutral-user.png" rel="icon">
+	<title>Login-ETE LAL</title>
+</head>
+<body>
+
+ <div>
+ 	<h2 class="name1"><a href="../indext.html">ETE-Luiz Alves Lacerda</a></h2>
+ </div>
+<form method="POST" id="login" class="log">
+		<p>Entre na sua conta</p>
+		<input type="email" name="email_login" class="field" placeholder="E-mail" required="required">
+		<input type="password" name="pass_login" class="field" placeholder="password" required="required">
+		<input type="submit"  class="btn" value="Entrar">
+		<a onclick="$('#registar').fadeIn(); $('#login').hide() ;">Não tenho uma conta</a>
+	</form> 
+ 
+	<form method="POST" id="registar" class="log">
+		<p>Criar uma conta</p>
+		<input type="text" name="nome" class="field" placeholder="Nome" required="required">
+		<input type="email" name="email_registo" class="field" placeholder="E-mail" required="required">
+		<input type="password" name="pass_registo" class="field" placeholder="password" required="required">
+		<input type="password" name="pass_registo_repetir" class="field" placeholder="Repetir password" required="required">
+		<input type="submit"  class="btn" value="Criar conta">
+		<a onclick="$('#login').fadeIn(); $('#registar').hide();">Já tenho conta</a>
+	</form> 
+	<p id="credits">&copy ETE-Luiz Alves Laceda <?php echo date("Y"); ?> - Todos os direitos a OMA1A </p>
+
+	<script type="text/javascript">
+
+              /*login*/
+
+		$('#login').submit(function(e){
+			var formData = new FormData($(this)[0]);
+			$.ajax({
+				url: "processos/login.php?login",
+				type: "POST",
+				data: formData,
+				async: true,
+				cache: false,
+				contentType: false,
+				processData: false,
+				beforeSend: function(){
+					              $('#loading').show();
+				},
+				beforeSubmit: function(){
+					               $('#loading').show();
+				},
+				success: function(msg){
+					               $('#nada').html(msg);
+                                   $('#loading').hide();
+				}
+			});
+			e.preventDefault();
+		});
+
+		/*Registro*/
+
+		$('#registar').submit(function(e){
+			var formData = new FormData($(this)[0]);
+			$.ajax({
+				url: "processos/login.php?registar",
+				type: "POST",
+				data: formData,
+				async: true,
+				cache: false,
+				contentType: false,
+				processData: false,
+				beforeSend: function(){
+					              $('#loading').show();
+				},
+				beforeSubmit: function(){
+					               $('#loading').show();
+				},
+				success: function(msg){
+					               $('#nada').html(msg);
+                                   $('#loading').hide();
+				}
+			});
+			e.preventDefault();
+		});
+	</script>
+
+
+</body>
+</html>
