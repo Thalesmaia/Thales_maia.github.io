@@ -1,0 +1,70 @@
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: gray;
+}
+
+.calendario {
+     margin-top: 150px;
+     text-align: center;
+}
+
+.ce {
+    font-size: 60px;
+    color: white;
+    background: black;
+}
+
+table#tabelaspec {
+     border: 3px solid black;
+     border-spacing: 4px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+table#tabelaspec td {
+    border: 2px solid black;
+    padding: 10px;
+
+}
+
+.DV {
+    background-color: ;
+    color: black;
+}
+
+.RY {
+    background-color: yellow;
+    color: yellow;
+}
+
+.RYH {
+    background-color: yellow;
+    color: black;
+}
+
+.ta1 {
+background:; 
+}
+.tb1 {
+background: ;
+}
+.la1 {
+background: ;
+}
+.ha1{
+background: ;
+}
+.la2{
+background: 
+}
+.lb2 {
+background: 
+}
+.ta2 {
+background: 
+}
+.tb2 {
+background: 
+}
